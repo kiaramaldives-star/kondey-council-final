@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thaana:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=20261116c">
+<link rel="stylesheet" href="css/site.css?v=20261116e">
 </head>
 <body>
 <a href="#app" class="skip" data-i18n="skip">މައިގަނޑު ބައިތަކަށް</a>
@@ -28,10 +28,14 @@
 </svg>
 
 <header class="site-header" id="header">
+  <div class="topbar"><div class="container tb-in">
+    <span class="tb-text" data-i18n="republic">ދިވެހިރާއްޖޭގެ ޖުމްހޫރިއްޔާ</span>
+    <a class="hotline" id="hotline" href="tel:+9607230019"><span class="hl-ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span><span class="ltr" id="hotlineNum"></span></a>
+  </div></div>
   <div class="container nav">
     <a href="#/" class="logo" aria-label="Home">
       <svg><use href="#logo"/></svg>
-      <span class="logo-text" data-i18n="short">ކޮނޑޭ ކައުންސިލް</span>
+      <span class="logo-name" data-i18n="short">ކޮނޑޭ ކައުންސިލް</span>
     </a>
 
     <ul class="menu" id="menu">
@@ -43,19 +47,6 @@
           <li><a href="#/contact" data-ic="phone"><span class="ml" data-i18n="m_contact"></span></a></li>
         </ul>
       </li>
-      <li><a href="#/documents?type=budget" data-i18n="m_finance"></a>
-        <ul class="dropdown">
-          <li><a href="#/documents?type=budget" data-ic="coins"><span class="ml" data-i18n="m_budget"></span></a></li>
-          <li><a href="#/documents?type=report" data-ic="chart"><span class="ml" data-i18n="m_reports"></span></a></li>
-          <li><a href="#/procurement?show=all" data-ic="receipt"><span class="ml" data-i18n="m_tender_results"></span></a></li>
-        </ul>
-      </li>
-      <li><a href="#/procurement" data-i18n="m_procurement"></a>
-        <ul class="dropdown">
-          <li><a href="#/procurement" data-ic="megaphone"><span class="ml" data-i18n="m_open_tenders"></span></a></li>
-          <li><a href="#/procurement?show=all" data-ic="receipt"><span class="ml" data-i18n="m_tender_results"></span></a></li>
-        </ul>
-      </li>
       <li><a href="#/island" data-i18n="m_island"></a>
         <ul class="dropdown">
           <li><a href="#/island" data-ic="map"><span class="ml" data-i18n="m_island_profile"></span></a></li>
@@ -63,16 +54,10 @@
           <li><a href="#/documents?type=plan" data-ic="plan"><span class="ml" data-i18n="m_plans"></span></a></li>
         </ul>
       </li>
-      <li><a href="#/services" data-i18n="m_services"></a>
-        <ul class="dropdown">
-          <li><a href="#/services" data-ic="grid"><span class="ml" data-i18n="m_all_services"></span></a></li>
-          <li><a href="#/documents?type=form" data-ic="form"><span class="ml" data-i18n="m_forms"></span></a></li>
-          <li><a href="#/contact" data-ic="chat"><span class="ml" data-i18n="m_feedback"></span></a></li>
-        </ul>
-      </li>
       <li><a href="#/news" data-i18n="m_media"></a>
         <ul class="dropdown">
           <li><a href="#/news" data-ic="news"><span class="ml" data-i18n="m_news"></span></a></li>
+          <li><a href="#/announcements" data-ic="megaphone"><span class="ml" data-i18n="m_announcements"></span></a></li>
           <li><a href="#/island#gallery" data-ic="image"><span class="ml" data-i18n="m_gallery"></span></a></li>
         </ul>
       </li>
@@ -82,15 +67,30 @@
           <li><a href="#/jobs?show=all" data-ic="list"><span class="ml" data-i18n="m_all_jobs"></span></a></li>
         </ul>
       </li>
+      <li><a href="#/procurement" data-i18n="m_procurement"></a>
+        <ul class="dropdown">
+          <li><a href="#/procurement" data-ic="megaphone"><span class="ml" data-i18n="m_open_tenders"></span></a></li>
+          <li><a href="#/procurement?show=all" data-ic="receipt"><span class="ml" data-i18n="m_tender_results"></span></a></li>
+        </ul>
+      </li>
       <li><a href="#/documents" data-i18n="m_documents"></a>
         <ul class="dropdown">
           <li><a href="#/documents?type=form" data-ic="form"><span class="ml" data-i18n="m_forms"></span></a></li>
           <li><a href="#/documents?type=regulation" data-ic="scale"><span class="ml" data-i18n="m_regs"></span></a></li>
+          <li><a href="#/documents?type=budget" data-ic="coins"><span class="ml" data-i18n="m_budget"></span></a></li>
+          <li><a href="#/documents?type=report" data-ic="chart"><span class="ml" data-i18n="m_reports"></span></a></li>
           <li><a href="#/documents?type=plan" data-ic="plan"><span class="ml" data-i18n="m_plans"></span></a></li>
           <li><a href="#/documents" data-ic="folder"><span class="ml" data-i18n="m_all_docs"></span></a></li>
         </ul>
       </li>
+      <li class="m-only"><a href="#/services" data-i18n="m_services"></a></li>
+      <li class="m-only"><a href="#/contact" data-i18n="m_feedback"></a></li>
     </ul>
+
+    <div class="nav-cta">
+      <a class="pill pill-red" href="#/services" data-i18n="m_services"></a>
+      <a class="pill pill-wine" href="#/contact" data-i18n="pill_feedback"></a>
+    </div>
 
     <div class="nav-tools">
       <button class="lang-btn" id="langBtn" type="button">EN</button>
@@ -116,31 +116,14 @@
 <!-- Every page is drawn here by js/site.js -->
 <main id="app" tabindex="-1"><div class="loading"><div class="spinner"></div></div></main>
 
-<footer>
-  <div class="container">
-    <div class="foot-card">
-      <div class="foot-top">
-        <div class="foot-name">
-          <strong data-i18n="office_name">ގއ. ކޮނޑޭ ކައުންސިލްގެ އިދާރާ</strong>
-          <span data-i18n="island_name">ގއ. ކޮނޑޭ</span>
-        </div>
-        <div class="social" id="social"></div>
-      </div>
-      <ul class="foot-links">
-        <li><a href="#/council" data-i18n="m_council">ކައުންސިލް</a></li>
-        <li><a href="#/documents?type=budget" data-i18n="m_finance">މާލިއްޔަތު</a></li>
-        <li><a href="#/procurement" data-i18n="m_procurement">ޕްރޮކިއުމަންޓްތައް</a></li>
-        <li><a href="#/island" data-i18n="m_island">ރަށް</a></li>
-        <li><a href="#/services" data-i18n="m_services">ޚިދުމަތްތައް</a></li>
-        <li><a href="#/news" data-i18n="m_media">މީޑިއާ ސެންޓަރ</a></li>
-        <li><a href="#/jobs" data-i18n="m_jobs">ވަޒީފާ</a></li>
-        <li><a href="#/documents" data-i18n="m_documents">ޑޮކިއުމަންޓްތައް</a></li>
-        <li><a href="#/contact" data-i18n="m_contact">ގުޅުއްވާ</a></li>
-      </ul>
-      <div class="foot-contact" id="footContact"></div>
-    </div>
-    <p class="copy" id="copy"></p>
+<footer class="mfooter">
+  <div class="container f-grid">
+    <div class="f-brand"><svg><use href="#logo"/></svg><strong data-i18n="name">ގއ. ކޮނޑޭ ކައުންސިލް</strong></div>
+    <ul class="f-links"><li><a href="#/council" data-i18n="m_council_about"></a></li><li><a href="#/contact" data-i18n="m_contact"></a></li><li><a href="#/announcements" data-i18n="m_announcements"></a></li><li><a href="#/news" data-i18n="m_news"></a></li><li><a href="#/island#gallery" data-i18n="m_gallery"></a></li><li><a href="#/documents?type=plan" data-i18n="m_plans"></a></li><li><a href="#/documents?type=form" data-i18n="m_forms"></a></li></ul>
+    <ul class="f-links"><li><a href="#/council#members" data-i18n="m_members"></a></li><li><a href="#/meetings" data-i18n="m_meetings"></a></li><li><a href="#/services" data-i18n="m_services"></a></li><li><a href="#/jobs" data-i18n="m_jobs"></a></li><li><a href="#/procurement" data-i18n="m_procurement"></a></li><li><a href="#/documents?type=budget" data-i18n="m_budget"></a></li><li><a href="#/documents?type=report" data-i18n="m_reports"></a></li></ul>
+    <div class="f-contact"><div id="fContact"></div><div class="social" id="social"></div></div>
   </div>
+  <div class="container"><p class="f-copy" id="copy"></p></div>
 </footer>
 
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
@@ -154,9 +137,9 @@
   <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 15l6-6 6 6"/></svg>
 </button>
 
-<script src="config.js?v=20261116c"></script>
-<script src="js/sample-data.js?v=20261116c"></script>
-<script src="js/store.js?v=20261116c"></script>
-<script src="js/site.js?v=20261116c"></script>
+<script src="config.js?v=20261116e"></script>
+<script src="js/sample-data.js?v=20261116e"></script>
+<script src="js/store.js?v=20261116e"></script>
+<script src="js/site.js?v=20261116e"></script>
 </body>
 </html>
