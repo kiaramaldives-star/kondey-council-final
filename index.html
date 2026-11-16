@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="dv" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ގއ. ކޮނޑޭ ކައުންސިލް</title>
+<meta name="description" content="GA. Kondey Council — official website: news, vacancies, procurement, services and council information.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thaana:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a href="#app" class="skip" data-i18n="skip">މައިގަނޑު ބައިތަކަށް</a>
+
+<!-- Logo (placeholder — replace with the council's real logo) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="47" fill="#fff" stroke="#D21034" stroke-width="3"/>
+    <circle cx="50" cy="50" r="41" fill="none" stroke="#D21034" stroke-width="1"/>
+    <path d="M52 16 C66 32 70 52 66 66 L52 66 Z" fill="#D21034"/>
+    <path d="M50 22 C40 38 38 54 42 66 L50 66 Z" fill="#E8566F"/>
+    <line x1="51" y1="14" x2="51" y2="70" stroke="#7A0A1E" stroke-width="1.6"/>
+    <path d="M28 68 L74 68 L68 74 L34 74 Z" fill="#7A0A1E"/>
+    <path d="M14 78 q6 -5 12 0 t12 0 t12 0 t12 0 t12 0 t12 0" fill="none" stroke="#1E4E8C" stroke-width="3"/>
+    <path d="M20 85 q6 -5 12 0 t12 0 t12 0 t12 0 t12 0" fill="none" stroke="#1E4E8C" stroke-width="3"/>
+  </symbol>
+</svg>
+
+<header class="site-header" id="header">
+  <div class="container nav">
+    <a href="#/" class="logo" aria-label="Home">
+      <svg><use href="#logo"/></svg>
+      <span class="logo-text" data-i18n="short">ކޮނޑޭ ކައުންސިލް</span>
+    </a>
+
+    <ul class="menu" id="menu">
+      <li><a href="#/council" data-i18n="m_council">ކައުންސިލް</a>
+        <ul class="dropdown">
+          <li><a href="#/council" data-i18n="m_council_about">ކައުންސިލާ ބެހޭ</a></li>
+          <li><a href="#/council#members" data-i18n="m_members">ކައުންސިލް މެންބަރުން</a></li>
+          <li><a href="#/meetings" data-i18n="m_meetings">ޖަލްސާތަކާއި ނިންމުންތައް</a></li>
+          <li><a href="#/contact" data-i18n="m_contact">ގުޅުއްވާ</a></li>
+        </ul>
+      </li>
+      <li><a href="#/documents?type=budget" data-i18n="m_finance">މާލިއްޔަތު</a>
+        <ul class="dropdown">
+          <li><a href="#/documents?type=budget" data-i18n="m_budget">ބަޖެޓް</a></li>
+          <li><a href="#/documents?type=report" data-i18n="m_reports">ރިޕޯޓުތައް</a></li>
+        </ul>
+      </li>
+      <li><a href="#/procurement" data-i18n="m_procurement">ޕްރޮކިއުމަންޓްތައް</a></li>
+      <li><a href="#/island" data-i18n="m_island">ރަށް</a>
+        <ul class="dropdown">
+          <li><a href="#/island" data-i18n="m_island_profile">ރަށާ ބެހޭ</a></li>
+          <li><a href="#/island#gallery" data-i18n="m_gallery">ފޮޓޯ ގެލެރީ</a></li>
+          <li><a href="#/documents?type=plan" data-i18n="m_plans">ޕްލޭންތައް</a></li>
+        </ul>
+      </li>
+      <li><a href="#/services" data-i18n="m_services">ޚިދުމަތްތައް</a></li>
+      <li><a href="#/news" data-i18n="m_media">މީޑިއާ ސެންޓަރ</a>
+        <ul class="dropdown">
+          <li><a href="#/news" data-i18n="m_news">ޚަބަރު</a></li>
+          <li><a href="#/island#gallery" data-i18n="m_gallery">ފޮޓޯ ގެލެރީ</a></li>
+        </ul>
+      </li>
+      <li><a href="#/jobs" data-i18n="m_jobs">ވަޒީފާ</a></li>
+      <li><a href="#/documents" data-i18n="m_documents">ޑޮކިއުމަންޓްތައް</a>
+        <ul class="dropdown">
+          <li><a href="#/documents?type=form" data-i18n="m_forms">ފޯމުތައް</a></li>
+          <li><a href="#/documents?type=regulation" data-i18n="m_regs">ޤަވާއިދުތައް</a></li>
+          <li><a href="#/documents" data-i18n="m_all_docs">ހުރިހާ ޑޮކިއުމަންޓެއް</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="nav-tools">
+      <button class="lang-btn" id="langBtn" type="button">EN</button>
+      <button class="icon-btn" id="searchBtn" type="button" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="7"/><line x1="16" y1="16" x2="21.5" y2="21.5"/></svg>
+      </button>
+      <button class="icon-btn burger" id="burger" type="button" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="search-panel" id="searchPanel" role="dialog" aria-modal="true" aria-label="Search">
+  <form class="search-box" id="searchForm">
+    <button class="icon-btn search-close" id="searchClose" type="button" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+    </button>
+    <input type="search" id="searchInput" data-i18n-ph="search" placeholder="ހޯދާ..." autocomplete="off">
+  </form>
+</div>
+
+<!-- Every page is drawn here by js/site.js -->
+<main id="app" tabindex="-1"><div class="loading"><div class="spinner"></div></div></main>
+
+<footer>
+  <div class="container">
+    <div class="foot-card">
+      <div class="foot-top">
+        <div class="foot-name">
+          <strong data-i18n="office_name">ގއ. ކޮނޑޭ ކައުންސިލްގެ އިދާރާ</strong>
+          <span data-i18n="island_name">ގއ. ކޮނޑޭ</span>
+        </div>
+        <div class="social" id="social"></div>
+      </div>
+      <ul class="foot-links">
+        <li><a href="#/council" data-i18n="m_council">ކައުންސިލް</a></li>
+        <li><a href="#/documents?type=budget" data-i18n="m_finance">މާލިއްޔަތު</a></li>
+        <li><a href="#/procurement" data-i18n="m_procurement">ޕްރޮކިއުމަންޓްތައް</a></li>
+        <li><a href="#/island" data-i18n="m_island">ރަށް</a></li>
+        <li><a href="#/services" data-i18n="m_services">ޚިދުމަތްތައް</a></li>
+        <li><a href="#/news" data-i18n="m_media">މީޑިއާ ސެންޓަރ</a></li>
+        <li><a href="#/jobs" data-i18n="m_jobs">ވަޒީފާ</a></li>
+        <li><a href="#/documents" data-i18n="m_documents">ޑޮކިއުމަންޓްތައް</a></li>
+        <li><a href="#/contact" data-i18n="m_contact">ގުޅުއްވާ</a></li>
+      </ul>
+      <div class="foot-contact" id="footContact"></div>
+    </div>
+    <p class="copy" id="copy"></p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <button class="icon-btn" id="lbClose" type="button" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+  </button>
+  <figure><img id="lbImg" alt=""><p id="lbCap"></p></figure>
+</div>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 15l6-6 6 6"/></svg>
+</button>
+
+<script src="config.js"></script>
+<script src="js/sample-data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
