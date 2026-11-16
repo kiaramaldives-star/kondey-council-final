@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thaana:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=20261116b">
+<link rel="stylesheet" href="css/site.css?v=20261116c">
 </head>
 <body>
 <a href="#app" class="skip" data-i18n="skip">މައިގަނޑު ބައިތަކަށް</a>
@@ -35,41 +35,59 @@
     </a>
 
     <ul class="menu" id="menu">
-      <li><a href="#/council" data-i18n="m_council">ކައުންސިލް</a>
+      <li><a href="#/council" data-i18n="m_council"></a>
         <ul class="dropdown">
-          <li><a href="#/council" data-i18n="m_council_about">ކައުންސިލާ ބެހޭ</a></li>
-          <li><a href="#/council#members" data-i18n="m_members">ކައުންސިލް މެންބަރުން</a></li>
-          <li><a href="#/meetings" data-i18n="m_meetings">ޖަލްސާތަކާއި ނިންމުންތައް</a></li>
-          <li><a href="#/contact" data-i18n="m_contact">ގުޅުއްވާ</a></li>
+          <li><a href="#/council" data-ic="building"><span class="ml" data-i18n="m_council_about"></span></a></li>
+          <li><a href="#/council#members" data-ic="user"><span class="ml" data-i18n="m_members"></span></a></li>
+          <li><a href="#/meetings" data-ic="gavel"><span class="ml" data-i18n="m_meetings"></span></a></li>
+          <li><a href="#/contact" data-ic="phone"><span class="ml" data-i18n="m_contact"></span></a></li>
         </ul>
       </li>
-      <li><a href="#/documents?type=budget" data-i18n="m_finance">މާލިއްޔަތު</a>
+      <li><a href="#/documents?type=budget" data-i18n="m_finance"></a>
         <ul class="dropdown">
-          <li><a href="#/documents?type=budget" data-i18n="m_budget">ބަޖެޓް</a></li>
-          <li><a href="#/documents?type=report" data-i18n="m_reports">ރިޕޯޓުތައް</a></li>
+          <li><a href="#/documents?type=budget" data-ic="coins"><span class="ml" data-i18n="m_budget"></span></a></li>
+          <li><a href="#/documents?type=report" data-ic="chart"><span class="ml" data-i18n="m_reports"></span></a></li>
+          <li><a href="#/procurement?show=all" data-ic="receipt"><span class="ml" data-i18n="m_tender_results"></span></a></li>
         </ul>
       </li>
-      <li><a href="#/procurement" data-i18n="m_procurement">ޕްރޮކިއުމަންޓްތައް</a></li>
-      <li><a href="#/island" data-i18n="m_island">ރަށް</a>
+      <li><a href="#/procurement" data-i18n="m_procurement"></a>
         <ul class="dropdown">
-          <li><a href="#/island" data-i18n="m_island_profile">ރަށާ ބެހޭ</a></li>
-          <li><a href="#/island#gallery" data-i18n="m_gallery">ފޮޓޯ ގެލެރީ</a></li>
-          <li><a href="#/documents?type=plan" data-i18n="m_plans">ޕްލޭންތައް</a></li>
+          <li><a href="#/procurement" data-ic="megaphone"><span class="ml" data-i18n="m_open_tenders"></span></a></li>
+          <li><a href="#/procurement?show=all" data-ic="receipt"><span class="ml" data-i18n="m_tender_results"></span></a></li>
         </ul>
       </li>
-      <li><a href="#/services" data-i18n="m_services">ޚިދުމަތްތައް</a></li>
-      <li><a href="#/news" data-i18n="m_media">މީޑިއާ ސެންޓަރ</a>
+      <li><a href="#/island" data-i18n="m_island"></a>
         <ul class="dropdown">
-          <li><a href="#/news" data-i18n="m_news">ޚަބަރު</a></li>
-          <li><a href="#/island#gallery" data-i18n="m_gallery">ފޮޓޯ ގެލެރީ</a></li>
+          <li><a href="#/island" data-ic="map"><span class="ml" data-i18n="m_island_profile"></span></a></li>
+          <li><a href="#/island#gallery" data-ic="image"><span class="ml" data-i18n="m_gallery"></span></a></li>
+          <li><a href="#/documents?type=plan" data-ic="plan"><span class="ml" data-i18n="m_plans"></span></a></li>
         </ul>
       </li>
-      <li><a href="#/jobs" data-i18n="m_jobs">ވަޒީފާ</a></li>
-      <li><a href="#/documents" data-i18n="m_documents">ޑޮކިއުމަންޓްތައް</a>
+      <li><a href="#/services" data-i18n="m_services"></a>
         <ul class="dropdown">
-          <li><a href="#/documents?type=form" data-i18n="m_forms">ފޯމުތައް</a></li>
-          <li><a href="#/documents?type=regulation" data-i18n="m_regs">ޤަވާއިދުތައް</a></li>
-          <li><a href="#/documents" data-i18n="m_all_docs">ހުރިހާ ޑޮކިއުމަންޓެއް</a></li>
+          <li><a href="#/services" data-ic="grid"><span class="ml" data-i18n="m_all_services"></span></a></li>
+          <li><a href="#/documents?type=form" data-ic="form"><span class="ml" data-i18n="m_forms"></span></a></li>
+          <li><a href="#/contact" data-ic="chat"><span class="ml" data-i18n="m_feedback"></span></a></li>
+        </ul>
+      </li>
+      <li><a href="#/news" data-i18n="m_media"></a>
+        <ul class="dropdown">
+          <li><a href="#/news" data-ic="news"><span class="ml" data-i18n="m_news"></span></a></li>
+          <li><a href="#/island#gallery" data-ic="image"><span class="ml" data-i18n="m_gallery"></span></a></li>
+        </ul>
+      </li>
+      <li><a href="#/jobs" data-i18n="m_jobs"></a>
+        <ul class="dropdown">
+          <li><a href="#/jobs" data-ic="briefcase"><span class="ml" data-i18n="m_open_jobs"></span></a></li>
+          <li><a href="#/jobs?show=all" data-ic="list"><span class="ml" data-i18n="m_all_jobs"></span></a></li>
+        </ul>
+      </li>
+      <li><a href="#/documents" data-i18n="m_documents"></a>
+        <ul class="dropdown">
+          <li><a href="#/documents?type=form" data-ic="form"><span class="ml" data-i18n="m_forms"></span></a></li>
+          <li><a href="#/documents?type=regulation" data-ic="scale"><span class="ml" data-i18n="m_regs"></span></a></li>
+          <li><a href="#/documents?type=plan" data-ic="plan"><span class="ml" data-i18n="m_plans"></span></a></li>
+          <li><a href="#/documents" data-ic="folder"><span class="ml" data-i18n="m_all_docs"></span></a></li>
         </ul>
       </li>
     </ul>
@@ -136,9 +154,9 @@
   <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 15l6-6 6 6"/></svg>
 </button>
 
-<script src="config.js?v=20261116b"></script>
-<script src="js/sample-data.js?v=20261116b"></script>
-<script src="js/store.js?v=20261116b"></script>
-<script src="js/site.js?v=20261116b"></script>
+<script src="config.js?v=20261116c"></script>
+<script src="js/sample-data.js?v=20261116c"></script>
+<script src="js/store.js?v=20261116c"></script>
+<script src="js/site.js?v=20261116c"></script>
 </body>
 </html>
