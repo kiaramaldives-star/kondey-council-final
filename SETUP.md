@@ -9,6 +9,7 @@ This folder is the whole website:
 | `config.js` | Where you paste your Supabase details (step 3) |
 | `supabase/schema.sql` | Sets up the database (step 2) |
 | `css/`, `js/`, `fonts/`, `images/` | Styles, code, the MV Waheed and Faruma fonts, member photos |
+| `docs/` | 14 **sample** PDFs (budget, reports, forms, minutes, tender documents, land-use plan) used only in demo mode. Each is marked SAMPLE. You can delete this folder once you go live. |
 
 Supabase menu names change from time to time. If a button below has a slightly different name, look for the closest match.
 
